@@ -1,0 +1,182 @@
+/* .quiz-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fb;
+}
+
+.quiz-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s ease;
+}
+
+.timer {
+  text-align: right;
+  color: #e53e3e;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: #667eea;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+.options label {
+  display: block;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options label:hover {
+  background: #f1f5ff;
+}
+
+.options label.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a67d8;
+} */
+
+
+/* Quiz.css */
+
+/* Main container */
+.quiz-container {
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: #fff7f0; /* light orange theme */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header with question number and timer */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ff4d00;
+}
+
+/* Timer styling */
+.quiz-header span {
+  background: #ff9360;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Question text */
+.quiz-question p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Option buttons */
+.quiz-options button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ffb380;
+  cursor: pointer;
+  background: #fff2e6;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for options */
+.quiz-options button:hover {
+  background: #ffcc99;
+  transform: translateY(-2px);
+}
+
+/* Selected option */
+.quiz-options button.selected {
+  background: linear-gradient(45deg, #ff4d00, #ff9360);
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 15px rgba(255, 77, 0, 0.4);
+}
+
+/* Next / Submit button */
+.next-btn {
+  margin-top: 25px;
+  padding: 14px 0;
+  width: 100%;
+  background: linear-gradient(45deg, #ff4d00, #ff9360);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for Next button */
+.next-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 77, 0, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 30px 20px;
+  }
+  .quiz-question p {
+    font-size: 18px;
+  }
+  .quiz-options button {
+    font-size: 15px;
+    padding: 12px;
+  }
+  .next-btn {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,88 @@
+/* ViewResults.css */
+
+/* Main container */
+.view-results-container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff7f0; /* light orange theme */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Heading */
+.view-results-container h2 {
+  color: #ff4d00;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+/* Table headers */
+th {
+  background: #ff9360;
+  color: #fff;
+  font-weight: 600;
+  padding: 14px;
+  text-align: left;
+}
+
+/* Table cells */
+td {
+  border-bottom: 1px solid #ffd9b3;
+  padding: 12px;
+}
+
+/* Zebra stripes for rows */
+tbody tr:nth-child(even) {
+  background: #fff1e6;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+  background: #ffe0cc;
+  transition: background 0.3s ease;
+}
+
+/* Button at bottom */
+.view-results-container button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff4d00, #ff9360);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Hover for button */
+.view-results-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 77, 0, 0.5);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .view-results-container {
+    padding: 30px 20px;
+  }
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .view-results-container button {
+    width: 100%;
+  }
+}

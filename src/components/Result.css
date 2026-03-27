@@ -1,0 +1,97 @@
+/* .result {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 50px;
+  color: gold;
+} */
+/* Result.css */
+
+/* Main container */
+.result-container {
+  max-width: 750px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background: #fff7f0; /* light orange theme */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+th, td {
+  border: 1px solid #ffb380;
+  padding: 14px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+/* Header row */
+th {
+  background: #ff9360;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background: #ffe6d6;
+  transform: scale(1.01);
+}
+
+/* Button styling */
+button {
+  padding: 14px 25px;
+  background: linear-gradient(45deg, #ff4d00, #ff9360);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for button */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 77, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .result-container {
+    padding: 30px 20px;
+  }
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+  button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}

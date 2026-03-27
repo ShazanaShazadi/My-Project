@@ -1,0 +1,134 @@
+/* ------------------ Container ------------------ */
+.manage-questions-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* ------------------ Heading ------------------ */
+.manage-questions-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff6600; /* bright theme color */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* ------------------ Table ------------------ */
+.manage-questions-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  overflow-x: auto;
+}
+
+/* Header row style */
+.manage-questions-container th,
+.manage-questions-container td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* Header background */
+.manage-questions-container th {
+  background-color: #ff9933; /* gradient alternative possible */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* Alternate row shading */
+.manage-questions-container tr:nth-child(even) {
+  background-color: #fdf5ef;
+}
+
+/* Row hover effect */
+.manage-questions-container tr:hover {
+  background-color: #ffe6cc;
+  transition: background 0.3s ease;
+}
+
+/* ------------------ Buttons ------------------ */
+.manage-questions-container button {
+  margin: 2px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Update button */
+.manage-questions-container button:first-child {
+  background-color: #28a745; /* green for update */
+  color: #fff;
+}
+
+.manage-questions-container button:first-child:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Delete button */
+.manage-questions-container button:last-child {
+  background-color: #dc3545; /* red for delete */
+  color: #fff;
+}
+
+.manage-questions-container button:last-child:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------ Mobile Responsive ------------------ */
+@media (max-width: 768px) {
+  .manage-questions-container {
+    padding: 30px 15px;
+    border-radius: 12px;
+  }
+
+  .manage-questions-container h2 {
+    font-size: 24px;
+  }
+
+  .manage-questions-container th,
+  .manage-questions-container td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .manage-questions-container button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  /* Make table scrollable horizontally */
+  .manage-questions-container table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* ------------------ Extra Creativity ------------------ */
+/* Add subtle gradient for table headers */
+.manage-questions-container th {
+  background: linear-gradient(45deg, #ff6600, #ff9933);
+}
+
+/* Smooth shadow hover for container */
+.manage-questions-container:hover {
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.12);
+}

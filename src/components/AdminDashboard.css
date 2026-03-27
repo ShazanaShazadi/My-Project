@@ -1,0 +1,64 @@
+/* AdminDashboard.css */
+
+/* Main container */
+.admin-container {
+  max-width: 600px; /* slightly bigger for better layout */
+  margin: 80px auto;
+  padding: 40px 30px;
+  text-align: center;
+  background: #fff7f0; /* light orange background */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Heading */
+.admin-container h2 {
+  color: #ff4d00;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Button container */
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* space between buttons */
+  flex-wrap: wrap; /* wrap for smaller screens */
+}
+
+/* Admin buttons */
+.admin-buttons button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background: linear-gradient(45deg, #ff4d00, #ff9360); /* gradient orange */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 77, 0, 0.4);
+}
+
+/* Hover effect */
+.admin-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 77, 0, 0.5);
+}
+
+/* Responsive for small screens */
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 30px 20px;
+  }
+  .admin-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .admin-buttons button {
+    width: 100%;
+  }
+}

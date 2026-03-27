@@ -1,0 +1,56 @@
+/* Container for update question form */
+.update-question-container {
+  width: 400px;
+  max-width: 90%;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading */
+.update-question-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form style */
+.update-question-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs for question and options */
+.update-question-container input {
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #df884f;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.update-question-container input:focus {
+  border-color: #da8609;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Submit button */
+.update-question-container button {
+  padding: 10px 15px;
+  background-color: #f1540b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.update-question-container button:hover {
+  background-color: #b34200;
+}
